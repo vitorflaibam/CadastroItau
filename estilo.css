@@ -6,6 +6,20 @@ body{
     align-items: center;
     padding: 10%;
     background: linear-gradient(180deg, #FF7200, #F79C60,#FFEF00);
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+section
+{
+  padding: 30px;
+}
+
+section img{
+    display: block;
+  height: 128px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .container{
