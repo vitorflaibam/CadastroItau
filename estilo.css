@@ -10,6 +10,34 @@ body{
     margin-bottom: 20vh;
 }
 
+      /* mexendo no box de select, mas apagar caso nao de certo */
+
+form .user-details .selecao{
+    margin-bottom: 15px;
+    width:100%;
+}
+
+.user-details .selecao .custom-select{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+      /* mexendo no box de select, mas apagar caso nao de certo */
+
+
 section
 {
   padding: 30px;
@@ -63,7 +91,6 @@ form .user-details .input-box{
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
-
 }
 
 .user-details .input-box input{
@@ -83,11 +110,6 @@ form .user-details .input-box{
     border-color:#FF7200;
 }
 
-form .gender-details .gender-title{
-    font-size: 16px;
-    font-weight: 500;
-    
-}
 
 form .button{
     height: 45px;
