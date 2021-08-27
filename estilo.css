@@ -1,3 +1,13 @@
+input, select, textarea{
+    width:195px;
+    border:10px solid #ccc;
+    
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+}
+
 body{
     font-family: sans-serif;
     display: flex;
@@ -13,15 +23,16 @@ body{
       /* mexendo no box de select, mas apagar caso nao de certo */
 
 form .user-details .selecao{
-    margin-bottom: 15px;
-    width:100%;
-}
-
-.user-details .selecao .custom-select{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
+        margin-bottom: 15px;
+        width:100%;
+    }
+    
+.user-details .input-box .custom-select{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+        margin-top: 5px
+    }
 
 .user-details select{
     height: 45px;
