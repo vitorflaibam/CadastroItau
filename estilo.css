@@ -1,7 +1,6 @@
 input, select, textarea{
     width:195px;
     border:10px solid #ccc;
-    
     -ms-box-sizing:content-box;
     -moz-box-sizing:content-box;
     box-sizing:content-box;
@@ -11,13 +10,13 @@ input, select, textarea{
 body{
     font-family: sans-serif;
     display: flex;
-    height: 100vh;
+    height:100%;
     justify-content: center;
     align-items: center;
     padding: 10%;
     background: linear-gradient(180deg, #FF7200, #F79C60,#FFEF00);
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
       /* mexendo no box de select, mas apagar caso nao de certo */
@@ -31,7 +30,6 @@ form .user-details .selecao{
         display: block;
         font-weight: 500;
         margin-bottom: 5px;
-        margin-top: 5px
     }
 
 .user-details select{
@@ -141,7 +139,7 @@ form .button input{
     background: #FF7200;
 }
 
-@media (max-width: 584px){
+@media (max-width: 700px){
     .container{
         max-width: 100%;
     }
