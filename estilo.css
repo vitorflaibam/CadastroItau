@@ -130,17 +130,20 @@ form .button input{
     height: 100%;
     width: 100%;
     outline: none;
-    color: #fff;
     border: none;
     font-size: 20px;
     font-weight: 500;   
     letter-spacing: 1px;
     border-radius: 5px;
     color: rgb(32, 32, 32);
-    background: #FF7200;
+    background: #FFEF00;
 }
 
-@media (max-width: 700px){
+form .button input:hover{ /* cor do botão ao passar o mouse por cima */
+    background-color: #FF7200;
+}
+
+@media (max-width: 700px){ /* responsividade */
     .container{
         max-width: 100%;
     }
