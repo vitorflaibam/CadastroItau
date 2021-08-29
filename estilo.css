@@ -8,12 +8,12 @@ input, select, textarea{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
     display: flex;
     min-height:100vh;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 2%;
     background: linear-gradient(180deg, #FF7200, #F79C60,#FFEF00);
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -26,11 +26,6 @@ form .user-details .selecao{
         width:100%;
     }
     
-.user-details .input-box .custom-select{
-        display: block;
-        font-weight: 500;
-        margin-bottom: 5px;
-    }
 
 .user-details select{
     height: 45px;
@@ -60,21 +55,23 @@ section img{
 }
 
 .container{
-    max-width: 700px;
+    max-width: 1000px;
     width: 100%;
     background: #fff;
-    padding: 25px 30px;
-    border-radius: 5px; 
+    padding: 25px 30px; 
+    border-radius: 5px; /* arredondar as bordas */
+    box-shadow: 0 2px 5px rgb(175, 174, 174);
+
 }
 
-.container .title{
+.container .title{ /* mexe só no titulo principal */
     text-align: center;
     font-size: 30px;
     font-weight: 500;
     position: relative;
 }
 
-.container .title::before{
+.container .title::before{ /* traço laranja abaixo do titulo */
     content:'';
     position: absolute;
     margin-bottom: -1vh;
@@ -87,19 +84,20 @@ section img{
 
 .container form .user-details{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas */
     justify-content: space-between;
-    margin: 40px 0 12px 0;
+    margin: 25px 1vw 12px 1vw;
 }
 
 form .user-details .input-box{
-    margin-bottom: 15px;
     width: calc(100% / 2 - 20px);
 }
 
-.user-details .input-box .details{
+.user-details .input-box .details,
+.user-details .input-box .custom-select{ 
     display: block;
     font-weight: 500;
+    margin-top: 20px; /* distancia entre o texto da segunda linha e caixa de cima */
     margin-bottom: 5px;
 }
 
@@ -116,10 +114,9 @@ form .user-details .input-box{
 }
 
 .user-details .input-box input:focus,
-.user-details .input-box input:valid{
+.user-details .input-box input:active{
     border-color:#FF7200;
 }
-
 
 form .button{
     height: 45px;
@@ -129,11 +126,12 @@ form .button{
 form .button input{
     height: 100%;
     width: 100%;
+    box-shadow: 0 2px 5px rgb(219, 219, 219);
     outline: none;
     border: none;
     font-size: 20px;
-    font-weight: 500;   
-    letter-spacing: 1px;
+    font-weight: 550;   
+    letter-spacing: 0.5px;
     border-radius: 5px;
     color: rgb(32, 32, 32);
     background: #FFEF00;
@@ -155,7 +153,14 @@ form .button input:hover{ /* cor do botão ao passar o mouse por cima */
         max-height: 300px;
         overflow-y:scroll;
     }
-    .user-details::-webkit-scrollbar{
-        width: 0;
-    }
+}
+
+/* #alert
+{
+  display: none;
+}
+
+#alert.show
+{
+  display: block;
 }

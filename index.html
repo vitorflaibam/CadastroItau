@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Cadastro Itaú</title>
-    <link rel="stylesheet" href="estilo.css">
-    <meta name="viewport" content="width=device-width". initial scale=1.0>    
+    <link rel="stylesheet" href="estilo.css" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width", initial scale=1.0>    
 </head>
 <body>
    
     <div class="container">
         <section>
-        <img alt="Logótipo do Itaú" src="/imagens/logo.png">
+            <img alt="Logótipo do Itaú" src="/imagens/logo.png">
 
-
-        <div class="title">Formulário de Cadastro</div>
-        <form action="#">
+     <div class="title">Formulário de Cadastro</div>
+        <form action="#" method="POST">
             
             <div class="user-details">
                 <div class="input-box">
@@ -23,7 +22,7 @@
                     <input type="text" placeholder="Digite seu nome completo" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">CPF*</span>
+                    <span class="details" id='cpf'>CPF*</span>
                     <input type="text" placeholder="Somente números" required>
                 </div>
                 <div class="input-box">
@@ -34,7 +33,7 @@
                     <div class="input-box">
                         <span class="custom-select">Sexo</span>
                         <select id="sex">
-                        <option value="1">Selecione</option>
+                        <option value="">Selecione</option>
                         <option value="2">Masculino</option>
                         <option value="3">Feminino</option>
                         <option value="4">Outros/prefiro não informar</option>
@@ -65,7 +64,7 @@
                 <div class="input-box">
                     <span class="custom-select">Estado*</span>
                     <select id="state" required>
-                    <option value="0">Selecione</option>
+                    <option value="">Selecione</option>
                     <option value="1">AC</option>
                     <option value="2">AL</option>
                     <option value="3">AP</option>
@@ -109,18 +108,20 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="text" placeholder="Digite seu Email">
+                    <input type="text" placeholder="Digite seu endereço de email">
                 </div>
             </div>
 
             *Campos de preenchimento obrigatório
 
             <div class="button">
-                <input type="submit" value="Enviar dados">
+                <input type="submit" value="Enviar dados" onclick="sucesso()">
             </div>
         </form>
+
+        <script src="script.js"></script>
+
         </section>
     </div>
 </body>
 </html>
-
