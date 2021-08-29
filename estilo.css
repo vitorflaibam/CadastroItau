@@ -86,11 +86,11 @@ section img{
     display: flex;
     flex-wrap: wrap; /* define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas */
     justify-content: space-between;
-    margin: 25px 1vw 12px 1vw;
+    margin: 25px 0 12px 0;
 }
 
 form .user-details .input-box{
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 2 - 10px);
 }
 
 .user-details .input-box .details,
