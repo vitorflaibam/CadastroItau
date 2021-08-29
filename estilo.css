@@ -90,7 +90,7 @@ section img{
 }
 
 form .user-details .input-box{
-    width: calc(100% / 2 - 10px);
+    width: calc(100% / 2 - 20px);
 }
 
 .user-details .input-box .details,
