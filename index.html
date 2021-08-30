@@ -15,6 +15,7 @@
             <img alt="Logótipo do Itaú" src="/imagens/logo.png">
 
      <div class="title">Formulário de Cadastro</div>
+
         <form action="enviado.html" method="get" onsubmit="return sucesso()">
             
             <div class="user-details">
@@ -23,9 +24,13 @@
                     <input type="text" placeholder="Digite seu nome completo" required>
                 </div>
                 <div class="input-box">
-                    <span class="details" id='cpf'>CPF*</span>
-                    <input type="number" placeholder="Somente números" required>
+                    <span class="details" id="cpf">CPF*</span>
+                    <input type="number" placeholder="Somente números" oninput="validacao()" id="cpf_digitado" required>
+                    <h3 id="error">O CPF digitado não é válido</h3>
+                    <h3 id="success">CPF válido!</h3>
                 </div>
+
+
                 <div class="input-box">
                     <span class="details">RG</span>
                     <input type="number" placeholder="Somente números">
@@ -104,7 +109,7 @@
                     <input type="tel" placeholder="Digite seu número com DDD" required>
                 </div>
                 <div class="input-box">
-                    <span class="details">Telefone fixo</span>
+                    <span class="details" id="cel">Telefone fixo</span>
                     <input type="text" placeholder="Digite seu telefone fixo">
                 </div>
                 <div class="input-box">
@@ -116,7 +121,7 @@
             *Campos de preenchimento obrigatório
 
             <div class="button">
-                <input type="submit" value="Enviar dados" onClick="sucesso()">
+                <input type="submit" value="Enviar dados" onClick="validaCPF()">
             </div>
         </form>
 

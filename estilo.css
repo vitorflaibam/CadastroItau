@@ -155,12 +155,15 @@ form .button input:hover{ /* cor do botão ao passar o mouse por cima */
     }
 }
 
-/* #alert
-{
-  display: none;
+#error{
+    display: none;
+    color: red;
+    font-size:10px;
+    margin-bottom: -15px;
 }
-
-#alert.show
-{
-  display: block;
+#success {
+    display: none;
+    color:green;
+    font-size:10px;
+    margin-bottom: -15px;
 }
